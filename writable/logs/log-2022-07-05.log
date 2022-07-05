@@ -1,0 +1,32 @@
+ERROR - 2022-07-05 01:33:56 --> Column 'first_name' cannot be null
+CRITICAL - 2022-07-05 01:33:56 --> Column 'first_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `employees` (`first_name`, `last_name`, `phone`, `email`, `designation`) VALUES (NULL, \'singh\', \'6235873215\', \'satta@gmail.com\', \'python developer\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `employees` (`first_name`, `last_name`, `phone`, `email`, `designation`) VALUES (NULL, \'singh\', \'6235873215\', \'satta@gmail.com\', \'python developer\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `employees` (`first_name`, `last_name`, `phone`, `email`, `designation`) VALUES (NULL, \'singh\', \'6235873215\', \'satta@gmail.com\', \'python developer\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `employees` (`first_name`, `last_name`, `phone`, `email`, `designation`) VALUES (:first_name:, :last_name:, :phone:, :email:, :designation:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\EmployeeController.php(26): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\EmployeeController->store()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-07-05 01:35:29 --> Column 'first_name' cannot be null
+CRITICAL - 2022-07-05 01:35:29 --> Column 'first_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `employees` (`first_name`, `last_name`, `phone`, `email`, `designation`) VALUES (NULL, \'singh\', \'6235873215\', \'satta@gmail.com\', \'python developer\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `employees` (`first_name`, `last_name`, `phone`, `email`, `designation`) VALUES (NULL, \'singh\', \'6235873215\', \'satta@gmail.com\', \'python developer\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `employees` (`first_name`, `last_name`, `phone`, `email`, `designation`) VALUES (NULL, \'singh\', \'6235873215\', \'satta@gmail.com\', \'python developer\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `employees` (`first_name`, `last_name`, `phone`, `email`, `designation`) VALUES (:first_name:, :last_name:, :phone:, :email:, :designation:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\EmployeeController.php(26): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\EmployeeController->store()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

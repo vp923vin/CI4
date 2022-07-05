@@ -1,0 +1,51 @@
+CRITICAL - 2022-07-04 06:16:59 --> Invalid file: New_view.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('New_view.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('New_view', [], true)
+ 3 APPPATH\Controllers\Example.php(9): view('New_view')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Example->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Example))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-04 08:04:43 --> Undefined variable $employee
+in APPPATH\Views\employee\index.php on line 27.
+ 1 APPPATH\Views\employee\index.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employee', 'APPPATH\\Views\\employee\\index.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\employee\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('employee/index', [], true)
+ 5 APPPATH\Controllers\EmployeeController.php(11): view('employee/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\EmployeeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-04 08:05:54 --> Undefined variable $employee
+in APPPATH\Views\employee\index.php on line 27.
+ 1 APPPATH\Views\employee\index.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employee', 'APPPATH\\Views\\employee\\index.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\employee\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('employee/index', [], true)
+ 5 APPPATH\Controllers\EmployeeController.php(11): view('employee/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\EmployeeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-04 08:06:35 --> Undefined variable $employees
+in APPPATH\Views\employee\index.php on line 27.
+ 1 APPPATH\Views\employee\index.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employees', 'APPPATH\\Views\\employee\\index.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\employee\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('employee/index', [], true)
+ 5 APPPATH\Controllers\EmployeeController.php(11): view('employee/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\EmployeeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployeeController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-04 08:25:56 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\EmployeeController.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\EmployeeController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\EmployeeController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\EmployeeController')
+ 4 SYSTEMPATH\CodeIgniter.php(846): class_exists('\\App\\Controllers\\EmployeeController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
