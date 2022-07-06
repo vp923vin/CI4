@@ -46,7 +46,7 @@
                                        
                                         <form action="<?= base_url('employee/delete/'.$row['id']) ?>" method="POST">
                                             <input type="hidden" name="_method" value="DELETE">
-                                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                                            <button type="submit" value="<?= $row['id']?>" class="btn btn-danger btn-sm del">Delete</button>
                                         </form>
                                     
                                     </td>
@@ -63,3 +63,35 @@
 
 
 <?= $this->endSection('content') ?>
+
+<?= $this->section('scripts')?>
+<script>
+    $(document).ready(function(){
+        $('.del').click(function(e){
+            e.preventDefault();
+            var id = $(this).val()
+
+            swal({
+            title: "Are you sure?",
+            text: "Once deleted, you will not be able to recover this imaginary file!",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+            })
+            .then((willDelete) => {
+            if (willDelete) {
+                swal("Poof! Your imaginary file has been deleted!", {
+                icon: "success",
+                });
+            } else {
+                swal("Your imaginary file is safe!");
+            }
+            });
+        });
+
+    });
+
+</script>
+    
+
+<?= $this->endSection('scripts') ?>

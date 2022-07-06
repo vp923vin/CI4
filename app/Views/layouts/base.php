@@ -22,12 +22,6 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">HomePage</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">StudentsData</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link active" href="#">EmployeesData</a>
         </li>
       </ul>
@@ -57,5 +51,9 @@
 
 <!-- Bootstrap Scripts -->
     <script src="<?= base_url()?>/public/assets/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="<?= base_url()?>/public/assets/js/jquery.js"></script>
+    <script src="<?= base_url()?>/public/assets/js/sweetalert.min.js"></script>
+    <?= $this->renderSection('scripts')?>
 </body>
 </html>
