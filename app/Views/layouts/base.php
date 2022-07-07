@@ -53,7 +53,7 @@
     <script src="<?= base_url()?>/public/assets/js/bootstrap.bundle.min.js"></script>
     <!-- jQuery -->
     <script src="<?= base_url()?>/public/assets/js/jquery.js"></script>
-    <script src="<?= base_url()?>/public/assets/js/sweetalert.min.js"></script>
+    
     <?= $this->renderSection('scripts')?>
 </body>
 </html>

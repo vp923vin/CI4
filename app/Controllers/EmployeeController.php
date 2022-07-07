@@ -48,9 +48,17 @@ class EmployeeController extends BaseController
         $employee->update($id, $data);
         return redirect()->to(base_url('employee'))->with('status','Employee Data Updated Successfully!');
     }
-    public function delete($id){
+    // public function delete($id){
+    //     $employee = new Employee();
+    //     $employee->delete($id);
+    //     return redirect()->to(base_url('employee'))->with('status','Employee Data Deleted Successfully!');
+    // }
+
+    public function confirmdelete($id = null){
         $employee = new Employee();
         $employee->delete($id);
-        return redirect()->to(base_url('employee'))->with('status','Employee Data Deleted Successfully!');
+        
+        return ;
     }
+
 }
